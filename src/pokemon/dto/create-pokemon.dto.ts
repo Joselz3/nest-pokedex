@@ -5,7 +5,7 @@ export class CreatePokemonDto {
     @IsInt()
     @IsPositive()
     @Min(1)
-    no:boolean;
+    no:number;
 
     @IsString()
     @MinLength(2)
