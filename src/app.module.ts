@@ -26,4 +26,8 @@ import { JoinValidationSchema } from './config/joi.validation';
   controllers: [],
   providers: [],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(){
+    console.log(process.env.MONGODB)
+  }
+}
